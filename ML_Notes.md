@@ -769,6 +769,40 @@
 
 ---
 
+## 34. Practical Use Cases of Machine Learning
+
+- **Healthcare** — disease diagnosis, medical image analysis, drug discovery.
+- **Finance** — fraud detection, credit scoring, algorithmic trading.
+- **E-commerce/Retail** — recommendation systems, demand forecasting, dynamic pricing.
+- **Marketing** — customer segmentation, churn prediction, targeted advertising.
+- **Manufacturing** — predictive maintenance, quality control/defect detection.
+- **Transportation** — route optimization, self-driving vehicles.
+- **NLP applications** — chatbots, sentiment analysis, machine translation.
+- **Computer Vision** — face recognition, object detection, image classification.
+
+---
+
+## 35. XGBoost (Extreme Gradient Boosting)
+
+- An optimized, highly efficient implementation of **Gradient Boosting**, widely used for structured/tabular data and popular in ML competitions.
+- Key characteristics:
+  - Adds **L1 and L2 regularization** to the boosting objective, reducing overfitting compared to plain Gradient Boosting.
+  - Uses **second-order gradient information** (Newton boosting) for faster, more accurate convergence.
+  - Handles **missing values internally** without needing separate imputation.
+  - Supports **parallel and distributed processing**, making it fast on large datasets.
+
+---
+
+## 36. CatBoost (Categorical Boosting)
+
+- A Gradient Boosting library developed by Yandex, designed to handle **categorical features natively** without manual encoding (like Label/One-Hot Encoding).
+- Key characteristics:
+  - Uses **"ordered boosting"** — a technique that reduces overfitting and target leakage that can occur in standard gradient boosting.
+  - Strong **out-of-the-box performance** with minimal hyperparameter tuning required.
+  - Well-suited for datasets with many categorical variables.
+
+---
+
 ## Algorithms Studied So Far
 *(This table will be updated every time a new algorithm topic is covered — lists the algorithm and which type of Machine Learning it belongs to.)*
 
@@ -788,6 +822,8 @@
 | LDA (Linear Discriminant Analysis) | Supervised Learning (Dimensionality Reduction) |
 | Random Projection | Unsupervised Learning (Dimensionality Reduction) |
 | ARIMA | Supervised/Statistical (Time Series Forecasting) |
+| XGBoost | Supervised Learning (Ensemble — Boosting) |
+| CatBoost | Supervised Learning (Ensemble — Boosting) |
 
 ---
 
@@ -830,3 +866,5 @@
 | LDA (Linear Discriminant Analysis) | scikit-learn | `from sklearn.discriminant_analysis import LinearDiscriminantAnalysis` |
 | Random Projection | scikit-learn | `from sklearn.random_projection import GaussianRandomProjection` |
 | ARIMA | statsmodels | `from statsmodels.tsa.arima.model import ARIMA` |
+| XGBoost | xgboost | `from xgboost import XGBClassifier, XGBRegressor` |
+| CatBoost | catboost | `from catboost import CatBoostClassifier, CatBoostRegressor` |
